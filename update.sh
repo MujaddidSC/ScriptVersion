@@ -16,18 +16,11 @@ if [[ -e /usr/local/bin/xray ]]; then
 	 echo -e "[ ${green}INFO${NC} ] Update Starting Now . . ."
 	 echo ""
 	 sleep 1
-	 cd /usr/bin
-	 rm restore
-	 rm menu
-	 wget -O restore "https://raw.githubusercontent.com/MujaddidSC/MultiportWebsocketPremium/main/BACKUP/restore.sh" && chmod +x restore
-	 wget -O menu "https://raw.githubusercontent.com/MujaddidSC/MultiportWebsocketPremium/main/SSH/menu.sh" && chmod +x menu
-	 echo ""
 	 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 	 sleep 1
 else
          echo -e "[ ${green}INFO${NC} ] XRAY Core CF-RAY Update Starting !"
 	 sleep 1
-         mv /usr/local/bin/xray /usr/local/bin/xray.bak && wget -q -O /usr/local/bin/xray "https://github.com/dharak36/Xray-core/releases/download/v1.0.0/xray.linux.64bit" && chmod 755 /usr/local/bin/xray
 	 echo ""
          echo -e "[ ${green}INFO${NC} ] XRAY Core CF-RAY Successfully Install !"
 	 echo ""
@@ -39,11 +32,6 @@ else
 	 echo -e "[ ${green}INFO${NC} ] Update Starting Now . . ."
 	 echo ""
 	 sleep 1
-	 cd /usr/bin
-	 rm restore
-	 rm menu
-	 wget -O restore "https://raw.githubusercontent.com/MujaddidSC/MultiportWebsocketPremium/main/BACKUP/restore.sh" && chmod +x restore
-	 wget -O menu "https://raw.githubusercontent.com/MujaddidSC/MultiportWebsocketPremium/main/SSH/menu.sh" && chmod +x menu
 	 echo ""
 	 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 	 sleep 1
